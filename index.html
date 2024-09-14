@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>一站式导航 -- xrh(c)</title>
+    <style>
+        a {
+            display: block;
+            margin-top: 0.5em;
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>一站式导航</h1> <!-- 标题 -->
+
+    <p>都是好东西</p> <!-- 描述性文字 -->
+
+    <script type=template id=list>
+https://www.bilibili.com/video/BV1pM4y127G5/?spm_id_from=333.337.search-card.all.click;;州放假安排查询
+https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click;;哔哩哔哩大会员免费看
+https://appjjwviaro5577.h5.xiaoeknow.com/p/decorate/page/eyJpZCI6Ijg2MDE1OSJ9?entry=2&entry_type=2002&share_user_id=anonymous_2h3JgSMjG34Uf6yji&wework_share_customer_id=anonymous_2h3JgSMjG34Uf6yji;;炎德英才联考成绩查询
+http://218.76.65.254:88/ameqp;;州民中校考成绩查询
+http://www.xxzmz.com/;;州民中官网
+http://www.hncds-jdxx.edu.cn/;;郡德学校
+https://jyhtyj.xxz.gov.cn/;;州教体局
+https://jyt.hunan.gov.cn/jyt/index.html;;省教育厅
+http://fuwu.jyt.hunan.gov.cn/hnweb/regist30.jsp;;一键举办
+https://cn.bing.com/?scope=web&FORM=QBLH;;bing
+https://aqtw.qq.com/;;暗区突围
+https://convertio.co/zh/;;在线文件格式转换
+https://www.viggle.ai/home;;viggleAI
+https://chatgpt.com/?model=auto;;chatGPT
+https://app.runwayml.com/;;RunwayAI
+https://www.weights.gg/zh/my-creations;;weightsAI
+https://github.com/;;github
+https://github.com/shc0743;;石浩晨0743
+https://mail.google.com/;;gmail
+https://www.microsoft.com/zh-cn/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fowa%2f0%2f%3fstate%3d1%26redirectTo%3daHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC8&sdf=0;;outlook
+
+</script>
+    <div id=container></div>
+    <script>{
+            const text = list.innerHTML.split('\n').filter(e => !!e)
+            for (const i of text) {
+                const l = i.split(';;')
+                const e = document.createElement('a')
+                e.href = l[0]
+                e.innerText = l[1]
+                container.append(e)
+            }
+        }</script>
+    <p>©2024 G2310 向瑞豪 All Rights Reserved</p> <!-- 更多说明 -->
+</body>
+
+</html>
